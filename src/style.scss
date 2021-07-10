@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+input {
+	outline: none;
+}
+
+button,
+a {
+	cursor: pointer;
+}
+
+#app {
+	display: grid;
+	place-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		#typed-value {
+			border: 1px solid #ccc;
+			border-radius: 8px;
+
+			width: 365px;
+			height: 36px;
+
+			padding: 16px;
+
+			margin: 16px 0;
+		}
+
+		#start-button {
+			height: 32px;
+			width: 91px;
+
+			border: none;
+			border-radius: 8px;
+
+			background: none;
+			background-color: rgb(31, 24, 24);
+
+			color: #fff;
+		}
+	}
+}
+
+.highlight {
+	background-color: yellow;
+}
+
+.error {
+	background-color: lightcoral;
+	border: red;
+}
