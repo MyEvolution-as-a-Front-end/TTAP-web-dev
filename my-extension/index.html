@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Carbon Trigger</title>
+	</head>
+	<body>
+		<div id="app">
+			<img alt="plants and people" src="src/images/plants-people.png" />
+			<div>
+				<h1>Welcome to Your Personal Carbon Trigger!</h1>
+			</div>
+			<form class="form-data" autocomplete="on">
+				<div>
+					<label for="region">Your region</label>
+					<input
+						type="text"
+						id="region"
+						class="region-name"
+						aria-label="Input your region"
+						required
+					/>
+				</div>
+				<button class="search-btn">Submit</button>
+			</form>
+			<div class="result">
+				<div class="result-container">
+					<p><strong>Region: </strong><span class="my-region"></span></p>
+					<p>
+						<strong>Carbon Usage: </strong><span class="carbon-usage"></span>
+					</p>
+					<p>
+						<strong>Fossil Fuel Percentage: </strong
+						><span class="fossil-fuel"></span>
+					</p>
+				</div>
+				<button class="clear-btn">Change region</button>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>
